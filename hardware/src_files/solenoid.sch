@@ -1,0 +1,927 @@
+EESchema Schematic File Version 4
+LIBS:exercise_drop_tubes-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title "EXERCISE DROP TUBES"
+Date "2021-11-07"
+Rev "v01"
+Comp ""
+Comment1 "CHECKED BY:"
+Comment2 "DESIGNED BY: Simon"
+Comment3 "PROJECT LEAD:"
+Comment4 "EXERCISE DROP TUBES"
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61D40759
+P 2150 2375
+AR Path="/61D40759" Ref="J?"  Part="1" 
+AR Path="/61D3558F/61D40759" Ref="J5"  Part="1" 
+F 0 "J5" H 2150 2475 50  0000 C CNN
+F 1 "Conn_01x02" H 2068 2501 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 2150 2375 50  0001 C CNN
+F 3 "~" H 2150 2375 50  0001 C CNN
+	1    2150 2375
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2375 2550 2375
+Wire Wire Line
+	2550 2375 2550 2275
+$Comp
+L power:+6V #PWR0101
+U 1 1 61D40761
+P 2550 2275
+F 0 "#PWR0101" H 2550 2125 50  0001 C CNN
+F 1 "+6V" H 2565 2448 50  0000 C CNN
+F 2 "" H 2550 2275 50  0001 C CNN
+F 3 "" H 2550 2275 50  0001 C CNN
+	1    2550 2275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2475 2575 2475
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 61D40768
+P 2475 2775
+AR Path="/61D40768" Ref="Q?"  Part="1" 
+AR Path="/61D3558F/61D40768" Ref="Q1"  Part="1" 
+F 0 "Q1" H 2666 2821 50  0000 L CNN
+F 1 "MMBT3904" H 2666 2730 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2675 2700 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 2475 2775 50  0001 L CNN
+	1    2475 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2575 2475 2575 2575
+Wire Wire Line
+	2575 2975 2575 3025
+$Comp
+L power:GND #PWR0102
+U 1 1 61D40770
+P 2575 3025
+F 0 "#PWR0102" H 2575 2775 50  0001 C CNN
+F 1 "GND" H 2580 2852 50  0000 C CNN
+F 2 "" H 2575 3025 50  0001 C CNN
+F 3 "" H 2575 3025 50  0001 C CNN
+	1    2575 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1925 2775 2125 2775
+$Comp
+L Device:R_Small_US R22
+U 1 1 61D40778
+P 2125 2925
+F 0 "R22" H 2193 2971 50  0000 L CNN
+F 1 "10k" H 2193 2880 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2125 2925 50  0001 C CNN
+F 3 "~" H 2125 2925 50  0001 C CNN
+	1    2125 2925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2125 2825 2125 2775
+Connection ~ 2125 2775
+Wire Wire Line
+	2125 2775 2275 2775
+$Comp
+L power:GND #PWR0103
+U 1 1 61D40781
+P 2125 3075
+F 0 "#PWR0103" H 2125 2825 50  0001 C CNN
+F 1 "GND" H 2130 2902 50  0000 C CNN
+F 2 "" H 2125 3075 50  0001 C CNN
+F 3 "" H 2125 3075 50  0001 C CNN
+	1    2125 3075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2125 3075 2125 3025
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61D40788
+P 3925 2375
+AR Path="/61D40788" Ref="J?"  Part="1" 
+AR Path="/61D3558F/61D40788" Ref="J7"  Part="1" 
+F 0 "J7" H 3925 2475 50  0000 C CNN
+F 1 "Conn_01x02" H 3843 2501 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 3925 2375 50  0001 C CNN
+F 3 "~" H 3925 2375 50  0001 C CNN
+	1    3925 2375
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4125 2375 4325 2375
+Wire Wire Line
+	4325 2375 4325 2275
+$Comp
+L power:+6V #PWR0104
+U 1 1 61D40790
+P 4325 2275
+F 0 "#PWR0104" H 4325 2125 50  0001 C CNN
+F 1 "+6V" H 4340 2448 50  0000 C CNN
+F 2 "" H 4325 2275 50  0001 C CNN
+F 3 "" H 4325 2275 50  0001 C CNN
+	1    4325 2275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4125 2475 4350 2475
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 61D40797
+P 4250 2775
+AR Path="/61D40797" Ref="Q?"  Part="1" 
+AR Path="/61D3558F/61D40797" Ref="Q3"  Part="1" 
+F 0 "Q3" H 4441 2821 50  0000 L CNN
+F 1 "MMBT3904" H 4441 2730 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4450 2700 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4250 2775 50  0001 L CNN
+	1    4250 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2475 4350 2575
+Wire Wire Line
+	4350 2975 4350 3025
+$Comp
+L power:GND #PWR0105
+U 1 1 61D4079F
+P 4350 3025
+F 0 "#PWR0105" H 4350 2775 50  0001 C CNN
+F 1 "GND" H 4355 2852 50  0000 C CNN
+F 2 "" H 4350 3025 50  0001 C CNN
+F 3 "" H 4350 3025 50  0001 C CNN
+	1    4350 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2775 3900 2775
+$Comp
+L Device:R_Small_US R24
+U 1 1 61D407A7
+P 3900 2925
+F 0 "R24" H 3968 2971 50  0000 L CNN
+F 1 "10k" H 3968 2880 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3900 2925 50  0001 C CNN
+F 3 "~" H 3900 2925 50  0001 C CNN
+	1    3900 2925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2825 3900 2775
+Connection ~ 3900 2775
+Wire Wire Line
+	3900 2775 4050 2775
+$Comp
+L power:GND #PWR0106
+U 1 1 61D407B0
+P 3900 3075
+F 0 "#PWR0106" H 3900 2825 50  0001 C CNN
+F 1 "GND" H 3905 2902 50  0000 C CNN
+F 2 "" H 3900 3075 50  0001 C CNN
+F 3 "" H 3900 3075 50  0001 C CNN
+	1    3900 3075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3075 3900 3025
+Wire Wire Line
+	5900 2400 6100 2400
+Wire Wire Line
+	6100 2400 6100 2300
+$Comp
+L power:+6V #PWR0107
+U 1 1 61D407BF
+P 6100 2300
+F 0 "#PWR0107" H 6100 2150 50  0001 C CNN
+F 1 "+6V" H 6115 2473 50  0000 C CNN
+F 2 "" H 6100 2300 50  0001 C CNN
+F 3 "" H 6100 2300 50  0001 C CNN
+	1    6100 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2500 6125 2500
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 61D407C6
+P 6025 2800
+AR Path="/61D407C6" Ref="Q?"  Part="1" 
+AR Path="/61D3558F/61D407C6" Ref="Q5"  Part="1" 
+F 0 "Q5" H 6216 2846 50  0000 L CNN
+F 1 "MMBT3904" H 6216 2755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6225 2725 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6025 2800 50  0001 L CNN
+	1    6025 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 2500 6125 2600
+Wire Wire Line
+	6125 3000 6125 3050
+$Comp
+L power:GND #PWR0108
+U 1 1 61D407CE
+P 6125 3050
+F 0 "#PWR0108" H 6125 2800 50  0001 C CNN
+F 1 "GND" H 6130 2877 50  0000 C CNN
+F 2 "" H 6125 3050 50  0001 C CNN
+F 3 "" H 6125 3050 50  0001 C CNN
+	1    6125 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5475 2800 5675 2800
+$Comp
+L Device:R_Small_US R26
+U 1 1 61D407D6
+P 5675 2950
+F 0 "R26" H 5743 2996 50  0000 L CNN
+F 1 "10k" H 5743 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5675 2950 50  0001 C CNN
+F 3 "~" H 5675 2950 50  0001 C CNN
+	1    5675 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5675 2850 5675 2800
+Connection ~ 5675 2800
+Wire Wire Line
+	5675 2800 5825 2800
+$Comp
+L power:GND #PWR0109
+U 1 1 61D407DF
+P 5675 3100
+F 0 "#PWR0109" H 5675 2850 50  0001 C CNN
+F 1 "GND" H 5680 2927 50  0000 C CNN
+F 2 "" H 5675 3100 50  0001 C CNN
+F 3 "" H 5675 3100 50  0001 C CNN
+	1    5675 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5675 3100 5675 3050
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61D407E6
+P 7375 2400
+AR Path="/61D407E6" Ref="J?"  Part="1" 
+AR Path="/61D3558F/61D407E6" Ref="J11"  Part="1" 
+F 0 "J11" H 7375 2500 50  0000 C CNN
+F 1 "Conn_01x02" H 7293 2526 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 7375 2400 50  0001 C CNN
+F 3 "~" H 7375 2400 50  0001 C CNN
+	1    7375 2400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7575 2400 7775 2400
+Wire Wire Line
+	7775 2400 7775 2300
+$Comp
+L power:+6V #PWR0110
+U 1 1 61D407EE
+P 7775 2300
+F 0 "#PWR0110" H 7775 2150 50  0001 C CNN
+F 1 "+6V" H 7790 2473 50  0000 C CNN
+F 2 "" H 7775 2300 50  0001 C CNN
+F 3 "" H 7775 2300 50  0001 C CNN
+	1    7775 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7575 2500 7800 2500
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 61D407F5
+P 7700 2800
+AR Path="/61D407F5" Ref="Q?"  Part="1" 
+AR Path="/61D3558F/61D407F5" Ref="Q7"  Part="1" 
+F 0 "Q7" H 7891 2846 50  0000 L CNN
+F 1 "MMBT3904" H 7891 2755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7900 2725 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 7700 2800 50  0001 L CNN
+	1    7700 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2500 7800 2600
+Wire Wire Line
+	7800 3000 7800 3050
+$Comp
+L power:GND #PWR0111
+U 1 1 61D407FD
+P 7800 3050
+F 0 "#PWR0111" H 7800 2800 50  0001 C CNN
+F 1 "GND" H 7805 2877 50  0000 C CNN
+F 2 "" H 7800 3050 50  0001 C CNN
+F 3 "" H 7800 3050 50  0001 C CNN
+	1    7800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2800 7350 2800
+$Comp
+L Device:R_Small_US R28
+U 1 1 61D40805
+P 7350 2950
+F 0 "R28" H 7418 2996 50  0000 L CNN
+F 1 "10k" H 7418 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7350 2950 50  0001 C CNN
+F 3 "~" H 7350 2950 50  0001 C CNN
+	1    7350 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2850 7350 2800
+Connection ~ 7350 2800
+Wire Wire Line
+	7350 2800 7500 2800
+$Comp
+L power:GND #PWR0112
+U 1 1 61D4080E
+P 7350 3100
+F 0 "#PWR0112" H 7350 2850 50  0001 C CNN
+F 1 "GND" H 7355 2927 50  0000 C CNN
+F 2 "" H 7350 3100 50  0001 C CNN
+F 3 "" H 7350 3100 50  0001 C CNN
+	1    7350 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 3100 7350 3050
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61D42B9A
+P 9150 2400
+AR Path="/61D42B9A" Ref="J?"  Part="1" 
+AR Path="/61D3558F/61D42B9A" Ref="J13"  Part="1" 
+F 0 "J13" H 9150 2500 50  0000 C CNN
+F 1 "Conn_01x02" H 9068 2526 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 9150 2400 50  0001 C CNN
+F 3 "~" H 9150 2400 50  0001 C CNN
+	1    9150 2400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2400 9550 2400
+Wire Wire Line
+	9550 2400 9550 2300
+$Comp
+L power:+6V #PWR0113
+U 1 1 61D42BA2
+P 9550 2300
+F 0 "#PWR0113" H 9550 2150 50  0001 C CNN
+F 1 "+6V" H 9565 2473 50  0000 C CNN
+F 2 "" H 9550 2300 50  0001 C CNN
+F 3 "" H 9550 2300 50  0001 C CNN
+	1    9550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2500 9575 2500
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 61D42BA9
+P 9475 2800
+AR Path="/61D42BA9" Ref="Q?"  Part="1" 
+AR Path="/61D3558F/61D42BA9" Ref="Q9"  Part="1" 
+F 0 "Q9" H 9666 2846 50  0000 L CNN
+F 1 "MMBT3904" H 9666 2755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9675 2725 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9475 2800 50  0001 L CNN
+	1    9475 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9575 2500 9575 2600
+Wire Wire Line
+	9575 3000 9575 3050
+$Comp
+L power:GND #PWR0114
+U 1 1 61D42BB1
+P 9575 3050
+F 0 "#PWR0114" H 9575 2800 50  0001 C CNN
+F 1 "GND" H 9580 2877 50  0000 C CNN
+F 2 "" H 9575 3050 50  0001 C CNN
+F 3 "" H 9575 3050 50  0001 C CNN
+	1    9575 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8925 2800 9125 2800
+$Comp
+L Device:R_Small_US R30
+U 1 1 61D42BB9
+P 9125 2950
+F 0 "R30" H 9193 2996 50  0000 L CNN
+F 1 "10k" H 9193 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 2950 50  0001 C CNN
+F 3 "~" H 9125 2950 50  0001 C CNN
+	1    9125 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9125 2850 9125 2800
+Connection ~ 9125 2800
+Wire Wire Line
+	9125 2800 9275 2800
+$Comp
+L power:GND #PWR0115
+U 1 1 61D42BC2
+P 9125 3100
+F 0 "#PWR0115" H 9125 2850 50  0001 C CNN
+F 1 "GND" H 9130 2927 50  0000 C CNN
+F 2 "" H 9125 3100 50  0001 C CNN
+F 3 "" H 9125 3100 50  0001 C CNN
+	1    9125 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9125 3100 9125 3050
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61D581FC
+P 2150 3825
+AR Path="/61D581FC" Ref="J?"  Part="1" 
+AR Path="/61D3558F/61D581FC" Ref="J6"  Part="1" 
+F 0 "J6" H 2150 3925 50  0000 C CNN
+F 1 "Conn_01x02" H 2068 3951 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 2150 3825 50  0001 C CNN
+F 3 "~" H 2150 3825 50  0001 C CNN
+	1    2150 3825
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3825 2550 3825
+Wire Wire Line
+	2550 3825 2550 3725
+$Comp
+L power:+6V #PWR0116
+U 1 1 61D58204
+P 2550 3725
+F 0 "#PWR0116" H 2550 3575 50  0001 C CNN
+F 1 "+6V" H 2565 3898 50  0000 C CNN
+F 2 "" H 2550 3725 50  0001 C CNN
+F 3 "" H 2550 3725 50  0001 C CNN
+	1    2550 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3925 2575 3925
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 61D5820B
+P 2475 4225
+AR Path="/61D5820B" Ref="Q?"  Part="1" 
+AR Path="/61D3558F/61D5820B" Ref="Q2"  Part="1" 
+F 0 "Q2" H 2666 4271 50  0000 L CNN
+F 1 "MMBT3904" H 2666 4180 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2675 4150 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 2475 4225 50  0001 L CNN
+	1    2475 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2575 3925 2575 4025
+Wire Wire Line
+	2575 4425 2575 4475
+$Comp
+L power:GND #PWR0117
+U 1 1 61D58213
+P 2575 4475
+F 0 "#PWR0117" H 2575 4225 50  0001 C CNN
+F 1 "GND" H 2580 4302 50  0000 C CNN
+F 2 "" H 2575 4475 50  0001 C CNN
+F 3 "" H 2575 4475 50  0001 C CNN
+	1    2575 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1925 4225 2125 4225
+$Comp
+L Device:R_Small_US R23
+U 1 1 61D5821B
+P 2125 4375
+F 0 "R23" H 2193 4421 50  0000 L CNN
+F 1 "10k" H 2193 4330 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2125 4375 50  0001 C CNN
+F 3 "~" H 2125 4375 50  0001 C CNN
+	1    2125 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2125 4275 2125 4225
+Connection ~ 2125 4225
+Wire Wire Line
+	2125 4225 2275 4225
+$Comp
+L power:GND #PWR0118
+U 1 1 61D58224
+P 2125 4525
+F 0 "#PWR0118" H 2125 4275 50  0001 C CNN
+F 1 "GND" H 2130 4352 50  0000 C CNN
+F 2 "" H 2125 4525 50  0001 C CNN
+F 3 "" H 2125 4525 50  0001 C CNN
+	1    2125 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2125 4525 2125 4475
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61D5822B
+P 3950 3825
+AR Path="/61D5822B" Ref="J?"  Part="1" 
+AR Path="/61D3558F/61D5822B" Ref="J8"  Part="1" 
+F 0 "J8" H 3950 3925 50  0000 C CNN
+F 1 "Conn_01x02" H 3868 3951 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 3950 3825 50  0001 C CNN
+F 3 "~" H 3950 3825 50  0001 C CNN
+	1    3950 3825
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3825 4350 3825
+Wire Wire Line
+	4350 3825 4350 3725
+$Comp
+L power:+6V #PWR0119
+U 1 1 61D58233
+P 4350 3725
+F 0 "#PWR0119" H 4350 3575 50  0001 C CNN
+F 1 "+6V" H 4365 3898 50  0000 C CNN
+F 2 "" H 4350 3725 50  0001 C CNN
+F 3 "" H 4350 3725 50  0001 C CNN
+	1    4350 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3925 4375 3925
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 61D5823A
+P 4275 4225
+AR Path="/61D5823A" Ref="Q?"  Part="1" 
+AR Path="/61D3558F/61D5823A" Ref="Q4"  Part="1" 
+F 0 "Q4" H 4466 4271 50  0000 L CNN
+F 1 "MMBT3904" H 4466 4180 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4475 4150 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4275 4225 50  0001 L CNN
+	1    4275 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4375 3925 4375 4025
+Wire Wire Line
+	4375 4425 4375 4475
+$Comp
+L power:GND #PWR0120
+U 1 1 61D58242
+P 4375 4475
+F 0 "#PWR0120" H 4375 4225 50  0001 C CNN
+F 1 "GND" H 4380 4302 50  0000 C CNN
+F 2 "" H 4375 4475 50  0001 C CNN
+F 3 "" H 4375 4475 50  0001 C CNN
+	1    4375 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3725 4225 3925 4225
+$Comp
+L Device:R_Small_US R25
+U 1 1 61D5824A
+P 3925 4375
+F 0 "R25" H 3993 4421 50  0000 L CNN
+F 1 "10k" H 3993 4330 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3925 4375 50  0001 C CNN
+F 3 "~" H 3925 4375 50  0001 C CNN
+	1    3925 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3925 4275 3925 4225
+Connection ~ 3925 4225
+Wire Wire Line
+	3925 4225 4075 4225
+$Comp
+L power:GND #PWR0121
+U 1 1 61D58253
+P 3925 4525
+F 0 "#PWR0121" H 3925 4275 50  0001 C CNN
+F 1 "GND" H 3930 4352 50  0000 C CNN
+F 2 "" H 3925 4525 50  0001 C CNN
+F 3 "" H 3925 4525 50  0001 C CNN
+	1    3925 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3925 4525 3925 4475
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61D5825A
+P 5700 3825
+AR Path="/61D5825A" Ref="J?"  Part="1" 
+AR Path="/61D3558F/61D5825A" Ref="J10"  Part="1" 
+F 0 "J10" H 5700 3925 50  0000 C CNN
+F 1 "Conn_01x02" H 5618 3951 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 5700 3825 50  0001 C CNN
+F 3 "~" H 5700 3825 50  0001 C CNN
+	1    5700 3825
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3825 6100 3825
+Wire Wire Line
+	6100 3825 6100 3725
+$Comp
+L power:+6V #PWR0122
+U 1 1 61D58262
+P 6100 3725
+F 0 "#PWR0122" H 6100 3575 50  0001 C CNN
+F 1 "+6V" H 6115 3898 50  0000 C CNN
+F 2 "" H 6100 3725 50  0001 C CNN
+F 3 "" H 6100 3725 50  0001 C CNN
+	1    6100 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3925 6125 3925
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 61D58269
+P 6025 4225
+AR Path="/61D58269" Ref="Q?"  Part="1" 
+AR Path="/61D3558F/61D58269" Ref="Q6"  Part="1" 
+F 0 "Q6" H 6216 4271 50  0000 L CNN
+F 1 "MMBT3904" H 6216 4180 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6225 4150 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6025 4225 50  0001 L CNN
+	1    6025 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 3925 6125 4025
+Wire Wire Line
+	6125 4425 6125 4475
+$Comp
+L power:GND #PWR0123
+U 1 1 61D58271
+P 6125 4475
+F 0 "#PWR0123" H 6125 4225 50  0001 C CNN
+F 1 "GND" H 6130 4302 50  0000 C CNN
+F 2 "" H 6125 4475 50  0001 C CNN
+F 3 "" H 6125 4475 50  0001 C CNN
+	1    6125 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5475 4225 5675 4225
+$Comp
+L Device:R_Small_US R27
+U 1 1 61D58279
+P 5675 4375
+F 0 "R27" H 5743 4421 50  0000 L CNN
+F 1 "10k" H 5743 4330 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5675 4375 50  0001 C CNN
+F 3 "~" H 5675 4375 50  0001 C CNN
+	1    5675 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5675 4275 5675 4225
+Connection ~ 5675 4225
+Wire Wire Line
+	5675 4225 5825 4225
+$Comp
+L power:GND #PWR0124
+U 1 1 61D58282
+P 5675 4525
+F 0 "#PWR0124" H 5675 4275 50  0001 C CNN
+F 1 "GND" H 5680 4352 50  0000 C CNN
+F 2 "" H 5675 4525 50  0001 C CNN
+F 3 "" H 5675 4525 50  0001 C CNN
+	1    5675 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5675 4525 5675 4475
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61D58289
+P 7375 3825
+AR Path="/61D58289" Ref="J?"  Part="1" 
+AR Path="/61D3558F/61D58289" Ref="J12"  Part="1" 
+F 0 "J12" H 7375 3925 50  0000 C CNN
+F 1 "Conn_01x02" H 7293 3951 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 7375 3825 50  0001 C CNN
+F 3 "~" H 7375 3825 50  0001 C CNN
+	1    7375 3825
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7575 3825 7775 3825
+Wire Wire Line
+	7775 3825 7775 3725
+$Comp
+L power:+6V #PWR0125
+U 1 1 61D58291
+P 7775 3725
+F 0 "#PWR0125" H 7775 3575 50  0001 C CNN
+F 1 "+6V" H 7790 3898 50  0000 C CNN
+F 2 "" H 7775 3725 50  0001 C CNN
+F 3 "" H 7775 3725 50  0001 C CNN
+	1    7775 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7575 3925 7800 3925
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 61D58298
+P 7700 4225
+AR Path="/61D58298" Ref="Q?"  Part="1" 
+AR Path="/61D3558F/61D58298" Ref="Q8"  Part="1" 
+F 0 "Q8" H 7891 4271 50  0000 L CNN
+F 1 "MMBT3904" H 7891 4180 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7900 4150 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 7700 4225 50  0001 L CNN
+	1    7700 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3925 7800 4025
+Wire Wire Line
+	7800 4425 7800 4475
+$Comp
+L power:GND #PWR0126
+U 1 1 61D582A0
+P 7800 4475
+F 0 "#PWR0126" H 7800 4225 50  0001 C CNN
+F 1 "GND" H 7805 4302 50  0000 C CNN
+F 2 "" H 7800 4475 50  0001 C CNN
+F 3 "" H 7800 4475 50  0001 C CNN
+	1    7800 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4225 7350 4225
+$Comp
+L Device:R_Small_US R29
+U 1 1 61D582A8
+P 7350 4375
+F 0 "R29" H 7418 4421 50  0000 L CNN
+F 1 "10k" H 7418 4330 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7350 4375 50  0001 C CNN
+F 3 "~" H 7350 4375 50  0001 C CNN
+	1    7350 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4275 7350 4225
+Connection ~ 7350 4225
+Wire Wire Line
+	7350 4225 7500 4225
+$Comp
+L power:GND #PWR0127
+U 1 1 61D582B1
+P 7350 4525
+F 0 "#PWR0127" H 7350 4275 50  0001 C CNN
+F 1 "GND" H 7355 4352 50  0000 C CNN
+F 2 "" H 7350 4525 50  0001 C CNN
+F 3 "" H 7350 4525 50  0001 C CNN
+	1    7350 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4525 7350 4475
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61D582B8
+P 9150 3825
+AR Path="/61D582B8" Ref="J?"  Part="1" 
+AR Path="/61D3558F/61D582B8" Ref="J14"  Part="1" 
+F 0 "J14" H 9150 3925 50  0000 C CNN
+F 1 "Conn_01x02" H 9068 3951 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 9150 3825 50  0001 C CNN
+F 3 "~" H 9150 3825 50  0001 C CNN
+	1    9150 3825
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 3825 9550 3825
+Wire Wire Line
+	9550 3825 9550 3725
+$Comp
+L power:+6V #PWR0128
+U 1 1 61D582C0
+P 9550 3725
+F 0 "#PWR0128" H 9550 3575 50  0001 C CNN
+F 1 "+6V" H 9565 3898 50  0000 C CNN
+F 2 "" H 9550 3725 50  0001 C CNN
+F 3 "" H 9550 3725 50  0001 C CNN
+	1    9550 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 3925 9575 3925
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 61D582C7
+P 9475 4225
+AR Path="/61D582C7" Ref="Q?"  Part="1" 
+AR Path="/61D3558F/61D582C7" Ref="Q10"  Part="1" 
+F 0 "Q10" H 9666 4271 50  0000 L CNN
+F 1 "MMBT3904" H 9666 4180 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9675 4150 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9475 4225 50  0001 L CNN
+	1    9475 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9575 3925 9575 4025
+Wire Wire Line
+	9575 4425 9575 4475
+$Comp
+L power:GND #PWR0129
+U 1 1 61D582CF
+P 9575 4475
+F 0 "#PWR0129" H 9575 4225 50  0001 C CNN
+F 1 "GND" H 9580 4302 50  0000 C CNN
+F 2 "" H 9575 4475 50  0001 C CNN
+F 3 "" H 9575 4475 50  0001 C CNN
+	1    9575 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8925 4225 9125 4225
+$Comp
+L Device:R_Small_US R31
+U 1 1 61D582D7
+P 9125 4375
+F 0 "R31" H 9193 4421 50  0000 L CNN
+F 1 "10k" H 9193 4330 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9125 4375 50  0001 C CNN
+F 3 "~" H 9125 4375 50  0001 C CNN
+	1    9125 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9125 4275 9125 4225
+Connection ~ 9125 4225
+Wire Wire Line
+	9125 4225 9275 4225
+$Comp
+L power:GND #PWR0130
+U 1 1 61D582E0
+P 9125 4525
+F 0 "#PWR0130" H 9125 4275 50  0001 C CNN
+F 1 "GND" H 9130 4352 50  0000 C CNN
+F 2 "" H 9125 4525 50  0001 C CNN
+F 3 "" H 9125 4525 50  0001 C CNN
+	1    9125 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9125 4525 9125 4475
+Text HLabel 1925 2775 0    50   Input ~ 0
+magnet1_trig
+Text HLabel 3700 2775 0    50   Input ~ 0
+magnet2_trig
+Text HLabel 5475 2800 0    50   Input ~ 0
+magnet3_trig
+Text HLabel 7150 2800 0    50   Input ~ 0
+magnet4_trig
+Text HLabel 8925 2800 0    50   Input ~ 0
+magnet5_trig
+Text HLabel 1925 4225 0    50   Input ~ 0
+magnet6_trig
+Text HLabel 3725 4225 0    50   Input ~ 0
+magnet7_trig
+Text HLabel 5475 4225 0    50   Input ~ 0
+magnet8_trig
+Text HLabel 7150 4225 0    50   Input ~ 0
+magnet9_trig
+Text HLabel 8925 4225 0    50   Input ~ 0
+magnet10_trig
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61D407B7
+P 5700 2400
+AR Path="/61D407B7" Ref="J?"  Part="1" 
+AR Path="/61D3558F/61D407B7" Ref="J9"  Part="1" 
+F 0 "J9" H 5700 2500 50  0000 C CNN
+F 1 "Conn_01x02" H 5618 2526 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 5700 2400 50  0001 C CNN
+F 3 "~" H 5700 2400 50  0001 C CNN
+	1    5700 2400
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

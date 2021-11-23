@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name exercise_drop_tubes-rescue)(type Legacy)(uri ${KIPRJMOD}/exercise_drop_tubes-rescue.lib)(options "")(descr ""))
+)
